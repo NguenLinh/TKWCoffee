@@ -1,0 +1,144 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f8e1;
+    padding-top: 80px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    background-color: #016b61;
+    padding: 15px 25px;
+}
+
+/* Nav chính */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;    
+    overflow-x: auto;    
+}
+
+/* Logo + menu */
+.nav_col {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;   
+}
+
+.nav_col img {
+    height: 70px;
+    margin-right: 40px;
+    flex-shrink: 0;     
+}
+
+/* Menu */
+.nav_col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    padding: 0;
+}
+
+.nav_col ul li {
+    margin-right: 30px;
+    white-space: nowrap; 
+}
+
+.nav_col ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.nav_col ul li a:hover {
+    color: white;
+    background-color: #213629;
+    border-radius: 10px;
+}
+
+/* Icon */
+.icon {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+    gap: 20px;
+    flex-shrink: 0;    
+}
+
+.icon a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.icon a:hover {
+    color: #9ecfd4;
+}
+
+.icon i {
+    margin-right: 5px; 
+}
+
+/* Responsive iPad */
+@media screen and (max-width: 1024px) {
+    .nav_col img {
+        height: 50px;
+        margin-right: 20px;
+    }
+    .nav_col ul li {
+        margin-right: 20px;
+    }
+    .nav_col ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    .icon a {
+        font-size: 14px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 768px) {
+    .nav_col img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    .nav_col ul li {
+        margin-right: 10px;
+    }
+    .nav_col ul li a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+    .icon {
+        gap: 8px;
+    }
+    .icon a {
+        font-size: 12px;
+    }
+}
