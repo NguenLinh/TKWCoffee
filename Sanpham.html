@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/Header.css">
+    <link rel="stylesheet" href="./css/Footer.css">
+
+    <!-- CSS sản phẩm -->
+    <link rel="stylesheet" href="./css/Sanpham.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- DANH MỤC -->
+    <aside class="sidebar">
+        <h4>CHỌN THEO LOẠI NƯỚC</h4>
+        <ul class="list">
+            <li onclick="filterByCategory('cà phê')">Cà phê</li>
+            <li onclick="filterByCategory('trà sữa')">Trà sữa</li>
+            <li onclick="filterByCategory('trà')" >Trà</li>
+            <li onclick="filterByCategory('đá xay')">Đá xay</li>
+            <li onclick="resetFilter()">Tất cả</li>
+        </ul>
+    </aside>
+
+    <!-- DANH SÁCH SẢN PHẨM -->
+    <section id="product-list" class="product-list"></section>
+
+    <div id="footer"></div>
+
+    <!-- JS giao diện + sản phẩm -->
+    <script src="./Js/giaodien.js"></script>
+    <script src="./Js/sanpham.js"></script>
+</body>
+</html>

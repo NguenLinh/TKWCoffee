@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanh toán - LN Floral</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/Thanhtoan.css" />
+  <link rel="stylesheet" href="./css/Header.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="home">
+    <a href="./Sanpham.html"> Quay lại </a>
+  </div>
+  <div class="checkout-container">
+    <h2>Thanh Toán</h2>
+
+    <!-- Sản phẩm -->
+    <section class="product-section">
+      <h3>Sản phẩm</h3>
+      <div id="cart-items"></div>
+    </section>
+
+    <!-- Thông tin thanh toán -->
+    <section class="payment-info-section">
+      <h3>Thông tin thanh toán</h3>
+      <label for="name">Tên:</label>
+      <input type="text" id="name" placeholder="Nhập họ tên" required>
+
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" placeholder="Nhập địa chỉ" required>
+
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+    </section>
+
+    <!-- Phương thức thanh toán -->
+    <section class="payment-section">
+      <h3>💳 Phương thức thanh toán</h3>
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+        <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label>
+      </div> 
+    </section>
+
+    <!-- Tổng tiền -->
+    <section class="total-section">
+      <div class="total-row total-final">
+        <strong>Tổng thanh toán:</strong>
+        <strong id="total">0 ₫</strong>
+      </div>
+      <button class="btn-order">Đặt hàng</button>
+    </section>
+  </div>
+
+  <script src="./js/Thanhtoan.js"></script>
+  <script src="./Js/giaodien.js"></script>
+</body>
+</html>

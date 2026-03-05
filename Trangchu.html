@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/Header.css">
+    <link rel="stylesheet" href="./css/Footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./Js/giaodien.js"></script>
+    <script src="./Js/main.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="slider">
+            <div class="slides" id="slides">
+                <img src="./Img/Giaodien/anhbia1.png" alt="ảnh 1">
+                <img src="./Img/Giaodien/anhnen6.png" alt="ảnh 2">
+                <img src="./Img/Giaodien/anhnen5.png" alt="ảnh 3">
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="col">
+            <h1>Chào mừng đến với Mooti Tea</h1>
+        </div>
+
+        <div class="noidung">
+            <div class="ndcon">
+                <img src="./Img/Giaodien/olong.png" alt="banh">
+                <div class="ndcon1">
+                    <h2>Trà Ô Long</h2>
+                    <p>
+                        Hay được gọi Trà Wulong, hoặc Oolong, loại trà này có nguồn gốc từ Trung Quốc và Đài Loan.
+                        Tên gọi “Olong” cũng đến từ tiếng Trung “wulong” (烏龍）, nghĩa là “rồng đen”.
+                        Nó thể hiện sự tôn vinh cho hình dáng lá trà sau khi chế biến, giống như hình dáng của một con rồng đen cuộn mình.
+                    </p>
+                    <button><a href="./Sanpham.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="ndcon">
+                <img src="./Img/Giaodien/nen_matcha5.png" alt="tra">
+                <div class="ndcon1">
+                    <h2>Bột Matcha</h2>
+                    <p>
+                        Matcha Nhật Bản là một loại bột trà xanh mịn, được làm từ lá trà Tencha sau khi được che nắng và chế biến theo phương pháp truyền thống. 
+                        Quá trình này làm tăng hàm lượng diệp lục và L-Theanine, tạo ra màu xanh đậm đặc trưng, hương vị umami và mang lại cảm giác thư thái, tỉnh táo. 
+                    </p>
+                    <p>
+                        "Anh yêu em như cách matcha gặp kem, vừa nồng nàn vừa dịu êm.""
+                    </p>
+                    <button ><a href="./Sanpham.html">Xem thêm</a></button>
+                </div>
+            </div>
+            
+            <div class="ndcon">
+                <img src="./Img/Giaodien/nen_cafe.png" alt="kem">
+                <div class="ndcon1">
+                    <h2>Bột Caffee</h2>
+                    <p>
+                        Cà phê là một loại thức uống được rất nhiều người ưa chuộng trong cuộc sống hiện đại,
+                        được ủ từ hạt cà phê rang, tách lấy từ quả của cây cà phê. Trải qua thời gian dài phát triển, 
+                        hiện nay có rất nhiều hình thức pha chế cà phê hấp dẫn, có thể kể đến như cà phê Espresso, 
+                        cà phê bình, latte,… Thức uống này bạn có thể uống nóng hoặc uống lạnh đều mang lại hương vị cực ngon.
+                        
+                    </p>
+                    <p>"Trong màu đen của cà phê tinh ý sẽ thấy được nét sóng sánh của màu nâu đỏ, sau vị đắng ngấm lòng là dư vị ngòn ngọt lạ kỳ của vị hương." </p>
+                    <button><a href="./Sanpham.html">Xem thêm</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>    
+</body>
+</html>
